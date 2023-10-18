@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 17px;
+}
+
+.orange {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  gap: 30px;
+}
+.orange div {
+  width: 100%;
+  height: 100px;
+  background-color: orange;
+}
+.yello {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.yello div {
+  width: 100%;
+  height: 370px;
+  background-color: yellow;
+}
+.blue {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  align-items: center;
+}
+.blue div {
+  width: 30%;
+  background-color: blue;
+  height: 230px;
+}
+.gray {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: center;
+}
+.gray div {
+  width: 23%;
+  height: 170px;
+  background-color: gray;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  section .orange {
+    display: flex;
+    flex-direction: column;
+  }
+
+  section .blue {
+    display: flex;
+    flex-direction: column;
+  }
+  section .blue div {
+    width: 100%;
+  }
+  section .gray div {
+    width: 47%;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  section .orange {
+    display: flex;
+    flex-direction: column;
+  }
+
+  section .blue {
+    display: flex;
+    flex-direction: column;
+  }
+  section .blue div {
+    width: 100%;
+  }
+  section .gray {
+    display: flex;
+    justify-content: center;
+    gap: 0px;
+    flex-wrap: nowrap;
+    width: 100%;
+  }
+  section .gray div {
+    width: 100%;
+    height: 100px;
+  }
+}
